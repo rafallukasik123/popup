@@ -1,0 +1,405 @@
+
+
+
+
+
+
+body{
+    background: blue;
+}
+
+   .popup-container{
+    width: 80%;
+   
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    min-width: 310px;
+    
+   
+}
+
+
+.close {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0.418px 2.971px 7px 0px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    z-index: 1000 !important; 
+    color: white;
+  }
+  
+  
+  
+
+
+.popup-container *{
+    box-sizing: border-box;
+    
+}
+
+
+  
+.popup-container_kolumna_1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 40%;
+   
+    
+  
+}
+
+
+.kolumna_1_obraz{
+    width: 100%;
+    z-index: 58;
+    background: url(Warstwa\ 5.png);
+    min-height: 45%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.kolumna_1_opis{
+    width: 100%;
+    min-height: 50%;
+    z-index: 55;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-start;
+  padding: 3%;
+  background: white;
+
+}
+
+
+
+.kolumna_1_opis_element1 {
+font-size: 19px;
+font-family: "OpenSans";
+color: rgb(0, 0, 0);
+text-transform: uppercase;
+line-height: 1.25;
+text-align: left;
+font-weight: bold;
+z-index: 53;
+width: 100%;
+font-weight: bold;
+
+}
+.kolumna_1_opis_element2 {
+    font-size: 30px;
+    font-family: "OpenSans";
+    color: rgb(213, 27, 35);
+    text-transform: uppercase;
+    line-height: 1.145;
+    text-align: left;
+    margin: 0;
+    z-index: 54;
+    width: 100%;
+    font-weight: bold;
+    }
+.kolumna_1_opis_element3 {
+font-size: 18px;
+font-family: "OpenSans";
+color: rgb(3, 16, 19);
+line-height: 1.552;
+text-align: left;
+z-index: 52;
+width: 100%;
+}
+
+.kolumna_1_opis_element3 > a {
+    color: rgb(213, 27, 35);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 910px) {
+    .kolumna_1_obraz{
+        display: none;
+    }
+   
+    .kolumna_1_opis{
+        align-items: center;
+        justify-content: center;
+    }
+    .popup-container{
+        flex-direction: column;
+    }
+    .popup-container_kolumna_1{
+        width: 100%;
+    }
+  }
+
+ 
+
+  .kolumna_2_form{
+
+   width: 60%;
+
+    background-color: rgb(235, 235, 235);
+   
+    z-index: 4;
+  
+  
+}
+
+@media only screen and (max-width: 910px) {
+    .kolumna_2_form{
+       
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .form_input_arrangement{
+        display: flex;
+        flex-direction: column !important;
+ 
+    
+      }
+      
+}
+
+   .form_input {
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+     z-index: 9;
+     width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+   margin: 2%;
+     
+    
+  }
+  
+
+  .grid-container{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .form_input_arrangement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+  }
+  
+
+
+.form_select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.select_full_view{
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+     z-index: 9;
+     width: 96%;
+     padding-top: 2%;
+    padding-bottom: 2%;
+    
+   margin: 2%;
+    
+}
+.file_header{
+    width: 100%;
+     
+}
+
+.file_header--description{
+   
+        font-size: 15px;
+        font-family: "Arial";
+        color: rgb(49, 42, 42);
+        line-height: 3.8;
+     
+        z-index: 26;
+        width: 96%;
+        padding-top: 2%;
+       padding-bottom: 2%;
+       
+      margin: 2%;
+      word-break: keep-all;
+}
+
+.add_file{
+    width: 96%;
+    padding-top: 2%;
+   padding-bottom: 2%;
+   display: flex;
+   justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  position: relative;
+}
+.add_file::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+   background-color: rgb(215, 215, 215);    
+    z-index: 46;
+      
+      
+}
+
+.add_file--remove{
+    color: #7d7d7d;
+font-size: 12px;
+border: 1px solid #adadad;
+padding: 1px 5px 3px 5px;
+line-height: 15px;
+display: inline-block;
+cursor: pointer;
+
+}
+
+.add_file--remove i {
+    font-weight: bold;
+font-style: normal;
+font-size: 20px;
+color: #7d7d7d;
+-webkit-transform: translate(3px, 3px) rotate(45deg);
+transform: translate(3px, 3px) rotate(45deg);
+display: inline-block;}
+
+
+
+
+.add_another_file--add{
+    color: white;
+display: inline-block;
+padding: 0 10px 3px 10px;
+font-size: 11px;
+line-height: 20px;
+cursor: pointer;
+border: 1px solid #adadad;
+
+
+    background-color: rgb(97, 97, 97);
+   
+   
+    z-index: 42;
+   
+    padding-top: 2%;
+   padding-bottom: 2%;
+   margin-bottom: 1%;
+ 
+  
+}
+
+.add_another_file{
+    position: relative;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  margin-right: 2%;
+}
+.add_another_file::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+   background-color: rgb(215, 215, 215);    
+    z-index: 46;
+}
+
+
+.regulations{
+    width: 96%;
+  
+   display: flex;
+   
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+ 
+}
+
+.regulations *{
+    padding-left: 1%;
+}
+
+.regulations span{
+  
+        font-size: 12px;
+        font-family: "OpenSans";
+        color: rgb(152, 152, 152);
+        line-height: 1.333;
+        
+        z-index: 37;
+      
+      
+}
+
+.see_more{
+    color: red !important;
+}
+
+.see_more--novisable{
+    display: none;
+}
+
+.submit{
+    
+  
+
+ 
+     z-index: 9;
+     width: 96%;
+     padding-top: 2%;
+    padding-bottom: 2%;
+    
+   margin: 2%;
+
+    background-color: rgb(213, 27, 35);
+
+    z-index: 7;
+    
+        font-size: 15px;
+        font-family: "OpenSans";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.6;
+     
+ 
+      
+      
+  
+}
+
+  .error {
+    color: red;
+   
+  
+  }
